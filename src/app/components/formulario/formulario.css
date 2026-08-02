@@ -1,0 +1,71 @@
+.formulario {
+  padding: 100px 40px;
+  background: white;
+  text-align: center;
+}
+
+.formulario-tag {
+  display: inline-block;
+  background: var(--color-accent);
+  color: var(--color-primary);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.formulario h2 {
+  font-size: 2.2rem;
+  color: var(--color-dark);
+  margin-bottom: 12px;
+}
+
+.formulario p {
+  color: #6b7b80;
+  margin-bottom: 40px;
+}
+
+.formulario-form {
+  max-width: 420px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.formulario-form input {
+  padding: 14px 18px;
+  border: 2px solid var(--color-light);
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.formulario-form input:focus {
+  border-color: var(--color-secondary);
+}
+
+.formulario-form button {
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.formulario-form button:hover {
+  background: var(--color-dark);
+}
+
+.formulario-gracias {
+  font-size: 1.3rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  padding: 40px 0;
+}

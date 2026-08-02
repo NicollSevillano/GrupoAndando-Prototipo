@@ -1,0 +1,38 @@
+<section class="formulario" id="contacto">
+  <div class="formulario-container">
+    <span class="formulario-tag">Quiero sumarme</span>
+    <h2>Dejanos tus datos</h2>
+    <p>Te contactamos para contarte cómo empezar a ser voluntario</p>
+
+    @if (!enviado()) {
+      <form (ngSubmit)="enviar()" class="formulario-form">
+        <input
+          type="text"
+          [(ngModel)]="nombre"
+          name="nombre"
+          placeholder="Tu nombre"
+          required
+        />
+        <input
+          type="email"
+          [(ngModel)]="contacto"
+          name="contacto"
+          placeholder="Tu email"
+          required
+        />
+        <input
+          type="tel"
+          [(ngModel)]="whatsapp"
+          name="whatsapp"
+          placeholder="Tu WhatsApp"
+          required
+        />
+        <button type="submit">Enviar</button>
+      </form>
+    } @else {
+      <div class="formulario-gracias">
+        ¡Gracias {{ nombre }}! Te vamos a contactar pronto 💙
+      </div>
+    }
+  </div>
+</section>

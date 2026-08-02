@@ -1,0 +1,28 @@
+.wsp-flotante {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: #25D366;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+  z-index: 300;
+  transition: transform 0.2s;
+}
+
+.wsp-flotante:hover {
+  transform: scale(1.08);
+}
+
+@media (max-width: 480px) {
+  .wsp-flotante {
+    width: 52px;
+    height: 52px;
+    bottom: 16px;
+    right: 16px;
+  }
+}

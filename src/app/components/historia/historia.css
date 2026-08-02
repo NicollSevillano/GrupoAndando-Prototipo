@@ -1,0 +1,75 @@
+.historia {
+  padding: 100px 40px;
+  background: var(--color-light);
+}
+
+.historia-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.historia-texto {
+  flex: 1;
+  min-width: 300px;
+}
+
+.historia-tag {
+  display: inline-block;
+  background: var(--color-accent);
+  color: var(--color-primary);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.historia-texto h2 {
+  font-size: 2.2rem;
+  color: var(--color-dark);
+  margin-bottom: 20px;
+}
+
+.historia-texto p {
+  color: #4a5a5f;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.historia-stats {
+  display: flex;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.stat strong {
+  display: block;
+  font-size: 2rem;
+  color: var(--color-primary);
+}
+
+.stat span {
+  font-size: 0.9rem;
+  color: #6b7b80;
+}
+
+.historia-foto {
+  flex: 1;
+  min-width: 280px;
+}
+
+.historia-foto img {
+  width: 100%;
+  border-radius: 16px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .historia-foto {
+    display: none;
+  }
+}

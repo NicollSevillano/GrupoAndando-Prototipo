@@ -1,0 +1,20 @@
+<nav class="navbar">
+  <div class="navbar-container">
+    <a href="#" class="navbar-brand">
+      <span>Grupo Andando</span>
+    </a>
+
+    <button class="navbar-toggle" (click)="toggleMenu()" aria-label="Abrir menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="navbar-links" [class.active]="menuAbierto()">
+      <a href="#historia" (click)="cerrarMenu()">Historia</a>
+      <a href="#galeria" (click)="cerrarMenu()">Galería</a>
+      <a href="#sumate" (click)="cerrarMenu()">Sumate</a>
+      <a href="#contacto" class="navbar-cta" (click)="cerrarMenu()">Contactanos</a>
+    </div>
+  </div>
+</nav>
