@@ -7,7 +7,6 @@ import { Component, OnInit, OnDestroy, signal } from '@angular/core';
   styleUrl: './countdown.css',
 })
 export class Countdown implements OnInit, OnDestroy {
-  // Cambiá esta fecha por la del próximo encuentro
   private targetDate = new Date('2026-08-15T15:00:00');
 
   dias = signal(0);
