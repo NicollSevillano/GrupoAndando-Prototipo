@@ -23,34 +23,23 @@
 
 .countdown p {
   color: #6b7b80;
-  margin-bottom: 40px;
+  max-width: 500px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
 }
 
-.countdown-boxes {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+.countdown-btn {
+  display: inline-block;
+  background: var(--color-primary);
+  color: white;
+  padding: 14px 32px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.2s, background 0.2s;
 }
 
-.countdown-box {
-  background: white;
-  box-shadow: 0 4px 20px rgba(21,131,158,0.15);
-  border-radius: 16px;
-  padding: 24px 30px;
-  min-width: 100px;
-}
-
-.countdown-box strong {
-  display: block;
-  font-size: 2.5rem;
-  color: var(--color-primary);
-  font-weight: 700;
-}
-
-.countdown-box span {
-  font-size: 0.85rem;
-  color: #6b7b80;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+.countdown-btn:hover {
+  background: var(--color-dark);
+  transform: translateY(-2px);
 }

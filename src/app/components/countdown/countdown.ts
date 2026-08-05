@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy, signal } from '@angular/core';
+/* import { Component, OnInit, OnDestroy, signal } from '@angular/core';
 
 @Component({
   selector: 'app-countdown',
@@ -43,3 +43,13 @@ export class Countdown implements OnInit, OnDestroy {
     this.segundos.set(Math.floor((diferencia % (1000 * 60)) / 1000));
   }
 }
+*/
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-countdown',
+  imports: [],
+  templateUrl: './countdown.html',
+  styleUrl: './countdown.css',
+})
+export class Countdown {}
